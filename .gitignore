@@ -1,0 +1,40 @@
+package Ua.Com.Kiev.Prog;
+
+import java.util.Scanner;
+
+public class Homework {
+
+	public static void main(String[] args) {
+		
+		 Scanner scanner = new Scanner(System.in);
+		 
+		 System.out.println("Введите 2 числа в HEX:");
+		 String f = scanner.nextLine(), e = scanner.nextLine();
+		 
+		 int x = Integer.parseInt(f, 16);
+		 int y = Integer.parseInt(e, 16);
+		 
+		 int a = (x + y);
+		 int b = (x - y);
+		 int c = (x * y);
+		 int d = (x / y);
+		 
+		 System.out.println("Число 1: " + x);
+		 System.out.println("Число 2: " + y);
+		 
+		 System.out.println("Сумма: " + a);
+		 System.out.println("Сумма в HEX: " + Integer.toHexString(a));
+		 
+		 System.out.println("Разница: " + b);
+		 System.out.println("Разница в HEX: " + Integer.toHexString(b));
+		 
+		 System.out.println("Умножение: " + c);
+		 System.out.println("Умножение в HEX: " + Integer.toHexString(c));
+		 
+		 System.out.println("Деление: " + d);
+		 System.out.println("Деление в HEX: " + Integer.toHexString(d));
+		 
+		 scanner.close();
+	
+	}
+}
